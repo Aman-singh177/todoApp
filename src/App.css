@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.inputbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: lightgreen;
+  height: 60px;
+}
+.ab{
+  width: 200px;
+  height: 30px;
+  font-size: 20px; 
+}
+.tasklist{
+  background-color: lightblue;
+  height: auto;
+  min-height: 200px;
+  margin: 20px;
+  padding: 20px;
+  width: 500px; 
+  margin-left: 570px;
+}
