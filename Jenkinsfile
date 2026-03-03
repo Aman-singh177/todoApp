@@ -1,10 +1,20 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS'
+    }
+
     stages {
-        stage('Build') {
+        stage('Install Dependencies') {
             steps {
-                echo 'Hello Aman! Pipeline is working!'
+                sh 'npm install'
+            }
+        }
+
+        stage('Build React App') {
+            steps {
+                sh 'npm run build'
             }
         }
     }
